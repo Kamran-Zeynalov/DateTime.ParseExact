@@ -10,9 +10,10 @@ namespace Birthday
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Enter your birtday");
             string? userBithday = Console.ReadLine();
+            string date = "dd | MM | yyyy";
             try
             {
-                var insert = DateTime.ParseExact(userBithday, "dd | MM | yyyy", null);
+                var insert = DateTime.ParseExact(userBithday, date, null);
             }
             catch (Exception e)
             {
